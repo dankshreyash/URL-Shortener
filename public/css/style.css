@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    background: #EEEDED;
+    text-align: center;
+    padding: 80px 30px;
+}
+
+.container .heading {
+    font-size: 72px;
+    color: #e9c46a;
+}
+
+div.form {
+    padding: 30px 0;
+}
+
+div.form form input {
+    padding: 12px;
+    border-radius: 12px;
+    width: 80%;
+    font-size: 20px;
+}
+
+div.form form button {
+    border: 0;
+    outline: none;
+    background-color: #1C6DD0;
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+
+}
+
+/* link-box */
+
+.link-box {
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFE61B;
+    padding: 30px;
+    margin: 4px;
+}
+
+.link-box .full,
+.link-box .short {
+    width: 40%;
+}
+
+.link-box div a {
+    color: #264653;
+}
+
+.clicks {
+    height: 20px;
+    width: 20px;
+    background: #2a9d8f;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.delete span {
+    color: #d11a2a;
+    font-size: 24px;
+}
+
+/* Responsive Styles */
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .container {
+        padding: 60px 15px;
+    }
+
+    .container .heading {
+        font-size: 48px;
+    }
+
+    div.form form input {
+        width: 100%;
+    }
+
+    .link-box .full,
+    .link-box .short {
+        width: 100%;
+    }
+}
