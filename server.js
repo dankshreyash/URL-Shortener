@@ -6,9 +6,7 @@ const app = express()
 const PORT = process.env.PORT || 3000
 
 
-//26.27
 
-//const writeConcern = { w: 'majority', wtimeout: 0, provenance: 'clientSupplied' };
 
 mongoose.connect("mongodb+srv://urlshrink:urlshrink@cluster0.svsyg2g.mongodb.net/urlshrinker?retryWrites=true", {
     //     useNewUrlParser: true,
