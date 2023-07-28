@@ -6,12 +6,15 @@ const app = express()
 const PORT = process.env.PORT || 3000
 
 
+//26.27
 
+//const writeConcern = { w: 'majority', wtimeout: 0, provenance: 'clientSupplied' };
 
-mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-
+mongoose.connect("mongodb+srv://urlshrink:urlshrink@cluster0.svsyg2g.mongodb.net/urlshrinker?retryWrites=true", {
+    //     useNewUrlParser: true,
+    //    // useCreateIndex: true,
+    //     useUnifiedTopology: true,
+    //     //useFindAndModify: false
 })
 
 const db = mongoose.connection;
