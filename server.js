@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000
 
 
 
-mongoose.connect("mongodb+srv://urlshrink:urlshrink@cluster0.svsyg2g.mongodb.net/urlshrinker?retryWrites=true", {
+mongoose.connect(MONGO_URI, {
     //     useNewUrlParser: true,
     //    // useCreateIndex: true,
     //     useUnifiedTopology: true,
