@@ -27,10 +27,6 @@ router.post('/shortUrls', async (req, res) => {
 
 })
 
-//post end
-
-
-//view data
 
 
 router.get('/:shortUrl', async (req, res) => {
@@ -60,12 +56,6 @@ router.get('/delete/:id', async (req, res) => {
         console.log(err);
     }
 
-
-
-
 })
-
-
-
 
 module.exports = router

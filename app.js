@@ -1,21 +1,18 @@
+require('dotenv').config()
+
+
 const express = require('express')
 const mongoose = require("mongoose")
 
 const app = express()
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 5000
 
 
-//26.27
 
-//const writeConcern = { w: 'majority', wtimeout: 0, provenance: 'clientSupplied' };
 
-mongoose.connect("mongodb+srv://urlshrink:urlshrink@cluster0.svsyg2g.mongodb.net/urlshrinker?retryWrites=true", {
-    //     useNewUrlParser: true,
-    //    // useCreateIndex: true,
-    //     useUnifiedTopology: true,
-    //     //useFindAndModify: false
-})
+
+mongoose.connect( process.env.MONGO_URL)
 
 const db = mongoose.connection;
 
